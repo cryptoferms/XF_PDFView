@@ -6,9 +6,12 @@ using System.Text;
 
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using XF_PDFView.Controls;
+using XF_PDFView.iOS.Renderers;
 
+[assembly: ExportRenderer(typeof(PdfWebView),typeof(PdfWebViewRenderer))]
 namespace XF_PDFView.iOS.Renderers
 {
     public class PdfWebViewRenderer : ViewRenderer<PdfWebView,UIWebView>

@@ -30,7 +30,8 @@ namespace XF_PDFView
                 return;
             }
             var localPath = string.Empty;
-            string url = "http://desenv1.algorix.com//Generix/Cons2ViaFaturaCliente.aspx?CdRede=9024&CdCliente=2002329&NuSeqFatura=57&IdUsu=2&ie6=rel.pdf&Tp=email";
+            //utilizar URL'S com o padrão https para funcionamento ideal no IOS, android todos funcionais.
+            string url = "https://desenv1.algorix.com//Generix/Cons2ViaFaturaCliente.aspx?CdRede=9024&CdCliente=2002329&NuSeqFatura=57&IdUsu=2&ie6=rel.pdf&Tp=email";
 
             var fileName = Guid.NewGuid().ToString();
 

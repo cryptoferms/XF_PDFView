@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Foundation;
-using UIKit;
+using Xamarin.Forms;
 using XF_PDFView.Helpers;
+using XF_PDFView.iOS.Helpers;
 
+[assembly: Dependency(typeof(LocalFileProvider))]
 namespace XF_PDFView.iOS.Helpers
 {
     public class LocalFileProvider : ILocalFileProvider
